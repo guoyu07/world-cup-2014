@@ -1,0 +1,77 @@
+html{ height: 100%;}
+body{ background: white; color: #95a4ba; font-size: 20px; height: 100%; line-height: 1; min-height: 100%; position: relative;}
+a{ cursor: pointer; text-decoration: none;}
+body, input{ font-family: 'Open Sans', Arial, sans-serif;}
+
+.heading{ padding: 10px 0;}
+.button, .checkbox{ background: white; border: 1px solid #fff200; border-radius: 20px; color: #f99d1c; display: inline-block; font-size: 16px; font-weight: 300;x height: 40px; line-height: 36px; padding: 0 20px; text-align: center;}
+  .button:hover{ border-color: #f99d1c;}
+  .heading .button{ float: right;}
+.checkbox{ border: none; position: relative;}
+  .heading .checkbox{ float: right; margin-right: 10px;}
+.checkbox input{ display: none;}
+.checkbox span{ border: 1px solid #f99d1c; border-radius: 4px; color: white; display: block; float: left; font-size: 14px; height: 20px; line-height: 18px; margin: 8px 10px 0 0; width: 20px;}
+  .checkbox input:checked + span{ background: #f99d1c; color: #fff200;}
+.title{ color: #ccc; font-size: 16px; font-weight: 300; letter-spacing: 0.1em; line-height: 40px; text-transform: uppercase;}
+.control{ border: 1px solid #94bf00; border-radius: 20px; height: 40px; line-height: 24px; padding-bottom: 2px; text-align: center; text-indent: 1px; width: 60px;}
+.control:focus{ border-color: #333; outline: none;}
+.date{ font-weight: 300; white-space: nowrap;}
+.time{ font-weight: 800;}
+.bet{ font-size: 16px; margin-top: 1em;}
+.score{ font-weight: 800;}
+.avatar{ background: hsl(216, 20%, 15%); border-radius: 50%; float: left; height: 30px; margin-right: 10px; width: 30px;}
+.name{ font-size: 14px;}
+
+.grid{ width: 100%;}
+.grid tr{ border-top: 1px solid #e6e6e6;}
+.grid th, .grid td{ padding: 10px; vertical-align: middle;}
+.grid .scores{ text-align: center; width: 60px;}
+.grid .team{ width: 30%;}
+.grid .team-a{ text-align: right;}
+
+.past{ background: #f5f7fa;}
+.past .date, .past .time{ color: #d5dfed;}
+.past .score{ color: #333;}
+.present, .present .score{ color: white;}
+.present .time{ text-transform: uppercase;}
+
+.side, .profile{ left: 0; padding: 10px; position: fixed; width: 240px;}
+.side{ bottom: 80px; color: white; overflow: auto; overflow-x: hidden; top: 0;}
+.side .title{ font-size: 12px; line-height: 20px;}
+
+.ranking{ line-height: 30px;}
+.ranking li{ border-top: 1px solid hsl(216, 20%, 30%); min-height: 41px; padding: 5px 0;}
+.ranking .score{ float: right; font-size: 16px; opacity: 0.2;}
+  .ranking li:first-child .score{ opacity: 1;}
+  .ranking li:nth-child(2) .score{ opacity: 0.8;}
+  .ranking li:nth-child(3) .score{ opacity: 0.6;}
+  .ranking li:nth-child(4) .score{ opacity: 0.4;}
+.ranking .name + .name{ margin-top: 5px;}
+
+.profile{ border-top: 1px solid #d7df23; bottom: 0; color: white; left: 0; position: fixed;}
+.profile .score{ float: right; line-height: 60px;}
+.profile .avatar{ height: 60px; width: 60px;}
+.profile .name{ font-size: 18px; font-weight: 700; line-height: 1.5; padding-top: 2px;}
+.profile .button{ background: transparent; color: white; font-size: 11px; height: 26px; line-height: 22px; margin-top: 2px; padding: 0 10px;}
+.profile .button:hover{ border-color: white;}
+
+/* Colors */
+
+.side{ background: hsl(216, 40%, 20%);}
+.profile{ background: hsl(216, 30%, 15%);}
+.present{ background: #94bf00;}
+.date{ color: #94bf00;}
+.present .time, .present .bet, .side .title{ color: #c5f230;}
+.time, .side .title{ color: #d7df23;}
+
+@media (min-width: 768px) {
+  body{ padding: 0 20px 0 260px;}
+  .main{ }
+  .side{ }
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+}
